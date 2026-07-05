@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { Mail, Send, Download, ArrowUpRight } from 'lucide-react';
-import { GithubIcon, LinkedinIcon, TwitterIcon } from './icons';
+import { GithubIcon, TwitterIcon } from './icons';
 
 const socials = [
   { icon: GithubIcon, label: 'GitHub', href: 'https://github.com/jameswuor', handle: '@jameswuor' },

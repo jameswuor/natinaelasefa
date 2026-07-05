@@ -1,5 +1,5 @@
 import { ArrowUp } from 'lucide-react';
-import { GithubIcon, LinkedinIcon, TwitterIcon } from './icons';
+import { GithubIcon, TwitterIcon } from './icons';
 
 const Footer = () => {
   const scrollToTop = () => {
