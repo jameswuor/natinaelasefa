@@ -22,9 +22,8 @@ const Footer = () => {
         {/* Center: Social links */}
         <div className="flex items-center gap-4">
           {[
-            { icon: GithubIcon, href: '#' },
-            { icon: LinkedinIcon, href: '#' },
-            { icon: TwitterIcon, href: '#' },
+            { icon: GithubIcon, href: 'https://github.com/jameswuor' },
+            { icon: TwitterIcon, href: 'https://x.com/mamastun33' },
           ].map(({ icon: Icon, href }, i) => (
             <a
               key={i}

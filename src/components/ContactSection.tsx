@@ -4,10 +4,9 @@ import { Mail, Send, Download, ArrowUpRight } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, TwitterIcon } from './icons';
 
 const socials = [
-  { icon: GithubIcon, label: 'GitHub', href: '#', handle: '@yourusername' },
-  { icon: LinkedinIcon, label: 'LinkedIn', href: '#', handle: '/in/yourname' },
-  { icon: TwitterIcon, label: 'Twitter / X', href: '#', handle: '@yourhandle' },
-  { icon: Mail, label: 'Email', href: 'mailto:hello@example.com', handle: 'hello@example.com' },
+  { icon: GithubIcon, label: 'GitHub', href: 'https://github.com/jameswuor', handle: '@jameswuor' },
+  { icon: TwitterIcon, label: 'Twitter / X', href: 'https://x.com/mamastun33', handle: '@mamastun33' },
+  { icon: Mail, label: 'Email', href: 'mailto:asenatinael12@gmail.com', handle: 'asenatinael12@gmail.com' },
 ];
 
 const ContactSection = () => {
