@@ -3,7 +3,7 @@ services:
     name: natinael-portfolio
     env: static
     buildCommand: npm run build
-    publishPath: dist
+    staticPublishPath: dist
     headers:
       - path: /*
         name: Cache-Control
