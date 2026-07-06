@@ -49,12 +49,11 @@ const Navbar = () => {
 
       {/* Right: Download CV (desktop) */}
       <a
-        href="#contact"
+        href="/natinael-asefa-cv.pdf"
+        download="Natinael_Asefa_CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
         className="hidden md:block bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-gray-100 transition-colors"
-        onClick={(e) => {
-          e.preventDefault();
-          document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
-        }}
       >
         Download CV
       </a>
@@ -89,13 +88,12 @@ const Navbar = () => {
             </button>
           ))}
           <a
-            href="#contact"
+            href="/natinael-asefa-cv.pdf"
+            download="Natinael_Asefa_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-3 bg-white text-gray-900 text-sm font-semibold px-6 py-3 rounded-full text-center hover:bg-gray-100 transition-colors"
-            onClick={(e) => {
-              e.preventDefault();
-              setMobileOpen(false);
-              document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
-            }}
+            onClick={() => setMobileOpen(false)}
           >
             Download CV
           </a>

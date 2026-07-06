@@ -114,7 +114,10 @@ const ContactSection = () => {
                   <Send className="w-4 h-4" />
                 </button>
                 <a
-                  href="#"
+                  href="/natinael-asefa-cv.pdf"
+                  download="Natinael_Asefa_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white/60 hover:text-white text-sm font-medium flex items-center gap-2 transition-colors"
                 >
                   <Download className="w-4 h-4" />
