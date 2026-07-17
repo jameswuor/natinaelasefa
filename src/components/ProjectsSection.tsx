@@ -27,7 +27,7 @@ const projects = [
     githubUrl: '#',
   },
   {
-    title: 'AI Loan Assessment System',
+    title: 'Loan Collection and Recovery System',
     description:
       'Intelligent credit scoring and loan assessment system using machine learning to evaluate borrower risk profiles and automate lending decisions.',
     image: '/images/ai-loan-assessment.jpg',
