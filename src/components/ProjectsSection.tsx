@@ -187,42 +187,34 @@ const ProjectsSection = () => {
               }`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
-              {/* Image */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-transparent opacity-60" />
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-black/60 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a
-                    href={project.liveUrl}
-                    className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-colors"
-                    aria-label="View live"
-                  >
-                    <ExternalLink className="w-4 h-4 text-white" />
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-colors"
-                    aria-label="View source"
-                  >
-                    <GithubIcon className="w-4 h-4 text-white" />
-                  </a>
-                </div>
-              </div>
-
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-white text-lg font-medium mb-2 group-hover:text-[#e8702a] transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-white/50 text-sm leading-relaxed mb-4">
-                  {project.description}
-                </p>
+              <div className="p-6 flex flex-col h-full justify-between">
+                <div>
+                  <div className="flex items-start justify-between gap-4 mb-2">
+                    <h3 className="text-white text-lg font-medium group-hover:text-[#e8702a] transition-colors">
+                      {project.title}
+                    </h3>
+                    <div className="flex items-center gap-2.5 mt-1 flex-shrink-0">
+                      <a
+                        href={project.liveUrl}
+                        className="text-white/40 hover:text-[#e8702a] transition-colors p-1"
+                        aria-label="View live"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                      <a
+                        href={project.githubUrl}
+                        className="text-white/40 hover:text-[#e8702a] transition-colors p-1"
+                        aria-label="View source"
+                      >
+                        <GithubIcon className="w-4 h-4" />
+                      </a>
+                    </div>
+                  </div>
+                  <p className="text-white/50 text-sm leading-relaxed mb-6">
+                    {project.description}
+                  </p>
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
